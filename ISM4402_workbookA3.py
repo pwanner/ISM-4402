@@ -22,8 +22,8 @@ df.loc[(df['Grades'] >= 100,'Grades')] = 100
 
 df
 
-df.loc[df['Grades'] > 0]
+df.loc[df['Grades'] < 0]
 
-df.loc[(df['Grades'] > 0,'Grades')] = 0
+df.loc[(df['Grades'] < 0,'Grades')] = 0
 
 df
